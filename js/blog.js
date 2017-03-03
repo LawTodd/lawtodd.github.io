@@ -11,18 +11,18 @@ $(document).ready(function(){
 							projectName = item;
 						} else {
 							if(i=="html_url"){
-								link = item;
+								projectLink = item;
 						} else {
 							if(i=="updated_at"){
-								date = item;	
+								projectDate = item;	
 								}
 							}
 						}
 					})
 				})
 			$("ul").append(
-				'<li><a href="' + link + '">' +projectName+
-				'</a><p>'+date+'</p></li>');	
+				'<li><a href="' + projectLink + '">' + projectName +
+				'</a><p>'+ projectDate +'</p></li>');	
 			}
 		})
 	})
