@@ -71,6 +71,22 @@
                 <h4 style="text-align: right;float: right;">Columbus,Ohio 43215</h4>
                 <h2></h2>
                 <h1></h1>
+                <h1></h1>
+            </div>
+
+            <div id="map" style="width:500px;height:500px;background:yellow"></div>
+
+            <script>
+                function myMap() {
+                 var mapCanvas = document.getElementById("map");
+                 var mapOptions = {
+                     center:new google.maps.LatLng(39.9767,-83.0112),zoom:16,
+                 };
+                 var map = new google.maps.Map(mapCanvas, mapOptions);
+                }
+            </script>
+            <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>-->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI0x7qAU2YLhvZARqVUnTWF3tdyyK5K0g&callback=myMap"></script>
                 
         <!-- Footer -->
         <footer>
