@@ -17,6 +17,42 @@
     <!-- Custom CSS -->
     <link href="css/blog-home.css" rel="stylesheet">
 
+    <style>
+        .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-liquid:hover .image {
+  opacity: 1;
+}
+
+.container-liquid:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+    </style>
+
 </head>
 
 <body>
@@ -92,18 +128,30 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <img src="MachuPicchu.jpg" alt="Peru" width="100%" height="345">
+                                <div class="middle">
+                                    <div class="text">Machu Picchu Peru</div>
+                                </div>
                             </div>
 
                             <div class="item">
                                 <img src="Todd&Wall&Sign.jpg" alt="China" width="100%" height="345">
+                                <div class="middle">
+                                    <div class="text">Great Wall of China</div>
+                                </div>
                             </div>
 
                             <div class="item">
                                 <img src="Todd@TreviFountain.jpg" alt="Rome" width="100%" height="345">
+                                <div class="middle">
+                                    <div class="text">Trevi Fountain in Rome</div>
+                                </div>
                             </div>
 
                             <div class="item">
                                 <img src="ToddinBangkok.jpg" alt="Bangkok" width="100%" height="345">
+                                <div class="middle">
+                                    <div class="text">Royal Palace in Bangkok</div>
+                                </div>
                             </div>
                         </div>
 

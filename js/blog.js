@@ -1,15 +1,10 @@
 $(document).ready(function(){
 	$.get("https://api.github.com/users/lawtodd",
 		function(data,status){
-			console.log("data:");
-			console.log(data);
+			
 			var item = data.repos_url;
 			$.get(item,function(data,status){
-				console.log("data:");
-				console.log(data);
-				var projectLink;
-				var projectName;
-				var projectDate;
+				
 				$.each(data, function(i,item){
 					var aRepo = data[i];
 					var	projectName = aRepo.name;
@@ -22,3 +17,4 @@ $(document).ready(function(){
 			})
 	})
 });
+
